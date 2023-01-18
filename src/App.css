@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    height: 100vh;
+    background-image: linear-gradient(
+        #C6F8FF,
+        #595CFF);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px #595CFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.right {
+    margin-left: 550px;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    color: blue;
+    font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#input {
+    
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #595CFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #595CFF;
+    color: #C6F8FF;
+    font-size: 1rem;
+    border: #C6F8FF;
+}
+
+#btn:hover {
+    background-color: #C6F8FF;
+    color: #595CFF;
+    display: block;
+}
+
+#btn:active {
+    box-shadow: 5px 5px 0px #595CFF;
+}
+
+#data {
+    padding: 20px;
+    margin-left: 60px;
+    margin-top: 20px;
+    border: 1px solid;
+    font-size: 1.3rem;
+    background-color: slateblue;
+    color: snow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+
+#data_show {
+    padding: 30px;
+    text-align: center;
+    background-color: slateblue;
+    color: snow;
+    visibility: visible;
+    overflow: hidden;
 }
